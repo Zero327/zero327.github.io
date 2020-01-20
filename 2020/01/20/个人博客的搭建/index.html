@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>个人博客的搭建 | ZQ的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.安装node LTS版本（需要Git）Windows上打开cmd通过node -v和npm -v查看是否安装成功。 2.安装淘宝镜像1npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org 3.安装hexo1cnpm install -g hexo-cli 4.创建blog文件夹，在该目录下初始">
+  <meta name="description" content="1.安装node LTS版本（需要Git）Windows上打开cmd通过node -v和npm -v查看是否安装成功。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="个人博客的搭建">
 <meta property="og:url" content="http://yoursite.com/2020/01/20/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/index.html">
 <meta property="og:site_name" content="ZQ的博客">
-<meta property="og:description" content="1.安装node LTS版本（需要Git）Windows上打开cmd通过node -v和npm -v查看是否安装成功。 2.安装淘宝镜像1npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org 3.安装hexo1cnpm install -g hexo-cli 4.创建blog文件夹，在该目录下初始">
+<meta property="og:description" content="1.安装node LTS版本（需要Git）Windows上打开cmd通过node -v和npm -v查看是否安装成功。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-01-20T07:45:57.000Z">
-<meta property="article:modified_time" content="2020-01-20T07:55:49.329Z">
+<meta property="article:modified_time" content="2020-01-20T07:59:05.484Z">
 <meta property="article:author" content="ZQ">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="Windows">
@@ -176,6 +176,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h3 id="1-安装node-LTS版本（需要Git）"><a href="#1-安装node-LTS版本（需要Git）" class="headerlink" title="1.安装node LTS版本（需要Git）"></a>1.安装node LTS版本（需要Git）</h3><p>Windows上打开cmd<br>通过<code>node -v</code>和<code>npm -v</code>查看是否安装成功。</p>
+<a id="more"></a>
 <h3 id="2-安装淘宝镜像"><a href="#2-安装淘宝镜像" class="headerlink" title="2.安装淘宝镜像"></a>2.安装淘宝镜像</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
 <h3 id="3-安装hexo"><a href="#3-安装hexo" class="headerlink" title="3.安装hexo"></a>3.安装hexo</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 <h3 id="4-创建blog文件夹，在该目录下初始化博客"><a href="#4-创建blog文件夹，在该目录下初始化博客" class="headerlink" title="4.创建blog文件夹，在该目录下初始化博客"></a>4.创建blog文件夹，在该目录下初始化博客</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
@@ -190,13 +191,13 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#### (2)安装部署插件</span><br></pre></td></tr></table></figure>
 <p>cnpm install –save hexo-deployer-git</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#### (3)配置_config.yml，找到deploy，修改为</span><br></pre></td></tr></table></figure>
-<h1 id="Deployment"><a href="#Deployment" class="headerlink" title="Deployment"></a>Deployment</h1><h2 id="Docs-https-hexo-io-docs-deployment-html"><a href="#Docs-https-hexo-io-docs-deployment-html" class="headerlink" title="Docs: https://hexo.io/docs/deployment.html"></a>Docs: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">https://hexo.io/docs/deployment.html</a></h2><p>deploy:<br>  type: git<br>  repo: <a href="https://github.com/Zero327/zero327.github.io.git" target="_blank" rel="noopener">https://github.com/Zero327/zero327.github.io.git</a><br>  branch: master</p>
+<p>deploy:<br>  type: git<br>  repo: <a href="https://github.com/Zero327/zero327.github.io.git" target="_blank" rel="noopener">https://github.com/Zero327/zero327.github.io.git</a><br>  branch: master</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#### (4)部署</span><br></pre></td></tr></table></figure>
 <p>hexo d</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">成功之后，会推到之前建立的github仓库。</span><br><span class="line">### 8.更换主题（yilia）</span><br><span class="line">#### (1)下载</span><br></pre></td></tr></table></figure>
 <p>git clone <a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">位于themes下</span><br><span class="line">#### (2)修改_config.yml中的theme:为yilia</span><br></pre></td></tr></table></figure>
-<h1 id="Extensions"><a href="#Extensions" class="headerlink" title="Extensions"></a>Extensions</h1><h2 id="Plugins-https-hexo-io-plugins"><a href="#Plugins-https-hexo-io-plugins" class="headerlink" title="Plugins: https://hexo.io/plugins/"></a>Plugins: <a href="https://hexo.io/plugins/" target="_blank" rel="noopener">https://hexo.io/plugins/</a></h2><h2 id="Themes-https-hexo-io-themes"><a href="#Themes-https-hexo-io-themes" class="headerlink" title="Themes: https://hexo.io/themes/"></a>Themes: <a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a></h2><p>theme: yilia</p>
+<p>theme: yilia</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#### (3)</span><br></pre></td></tr></table></figure>
 <p>hexo clean<br>hexo g<br>hexo s(预览)<br>hexo d</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">### (4)设置目录</span><br><span class="line">在_config.yml中添加：</span><br></pre></td></tr></table></figure>
@@ -440,11 +441,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Git</a>
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
+                <a href="javascript:void(0)" class="js-tag color4">Git</a>
               </li>
              
               <li class="article-tag-list-item">
