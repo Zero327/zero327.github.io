@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Git的安装和配置 | ZQ的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="之前已经安装配置完成，现做一些梳理，可能不完全。 1.安装Githttps:&#x2F;&#x2F;git-scm.com&#x2F;download根据自己需要选择安装即可，具体详细选择，待以后安装时，再做说明。 2.配置（1）配置账号信息12git config --global user.name &quot;GitHub用户名&quot;git config --global user.email GitHub的注册邮">
+  <meta name="description" content="之前已经安装配置完成，现做一些梳理，可能不完全。 1.安装Githttps:&#x2F;&#x2F;git-scm.com&#x2F;download根据自己需要选择安装即可，具体详细选择，待以后安装时，再做说明。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git的安装和配置">
 <meta property="og:url" content="http://yoursite.com/2020/01/18/Git%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/index.html">
 <meta property="og:site_name" content="ZQ的博客">
-<meta property="og:description" content="之前已经安装配置完成，现做一些梳理，可能不完全。 1.安装Githttps:&#x2F;&#x2F;git-scm.com&#x2F;download根据自己需要选择安装即可，具体详细选择，待以后安装时，再做说明。 2.配置（1）配置账号信息12git config --global user.name &quot;GitHub用户名&quot;git config --global user.email GitHub的注册邮">
+<meta property="og:description" content="之前已经安装配置完成，现做一些梳理，可能不完全。 1.安装Githttps:&#x2F;&#x2F;git-scm.com&#x2F;download根据自己需要选择安装即可，具体详细选择，待以后安装时，再做说明。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-01-18T05:13:24.000Z">
-<meta property="article:modified_time" content="2020-01-20T08:22:40.594Z">
+<meta property="article:modified_time" content="2020-01-20T08:25:17.121Z">
 <meta property="article:author" content="ZQ">
 <meta property="article:tag" content="Git">
 <meta name="twitter:card" content="summary">
@@ -175,6 +175,7 @@
       
         <p>之前已经安装配置完成，现做一些梳理，可能不完全。</p>
 <h3 id="1-安装Git"><a href="#1-安装Git" class="headerlink" title="1.安装Git"></a>1.安装Git</h3><p><a href="https://git-scm.com/download" target="_blank" rel="noopener">https://git-scm.com/download</a><br>根据自己需要选择安装即可，具体详细选择，待以后安装时，再做说明。</p>
+<a id="more"></a>
 <h3 id="2-配置"><a href="#2-配置" class="headerlink" title="2.配置"></a>2.配置</h3><h4 id="（1）配置账号信息"><a href="#（1）配置账号信息" class="headerlink" title="（1）配置账号信息"></a>（1）配置账号信息</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;GitHub用户名&quot;</span><br><span class="line">git config --global user.email GitHub的注册邮箱</span><br></pre></td></tr></table></figure>
 <h4 id="（2）创建本地ssh"><a href="#（2）创建本地ssh" class="headerlink" title="（2）创建本地ssh"></a>（2）创建本地ssh</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh key -t rsa -C &quot;GitHub的注册邮箱&quot;</span><br></pre></td></tr></table></figure>
 <h4 id="（3）将SSH配置到Gihub"><a href="#（3）将SSH配置到Gihub" class="headerlink" title="（3）将SSH配置到Gihub"></a>（3）将SSH配置到Gihub</h4><p>生成ssh-key后命令行会提示保存的路径，找到这个路径下的id_rsa.pub文件用记事本打开，复制其中内容。<br>登录GitHub，点击Settings——SSH and GPG keys——点击右侧Add SSH key，为key起个Title，粘贴复制内容到Key中。</p>
