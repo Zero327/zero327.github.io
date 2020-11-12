@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Android Studio安装和配置 | ZQ的博客</title>
+  <title>Java命令行运行遇到的一些问题 | ZQ的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.下载https:&#x2F;&#x2F;developer.android.google.cn&#x2F;studio#downloads勾选Android Virtual Device，选择适合位置安装。 2.安装完成后在启动界面选择Configure-&gt;SDK Manage-&gt;选择Android SDK Location位置（预留25GB）。在SDK Platforms中选择相应SDK版本。 3.安装过程中">
+  <meta name="description" content="1.’javac’ 不是内部或外部命令,也不是可运行的程序 或批处理文件。问题排查：找到java安装下的bin目录，运行cmd,输入javac，能提示，说明环境配置有问题">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Android Studio安装和配置">
-<meta property="og:url" content="http://yoursite.com/2020/02/17/Android-Studio%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/index.html">
+<meta property="og:title" content="Java命令行运行遇到的一些问题">
+<meta property="og:url" content="http://yoursite.com/2020/11/12/Java%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%90%E8%A1%8C%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="ZQ的博客">
-<meta property="og:description" content="1.下载https:&#x2F;&#x2F;developer.android.google.cn&#x2F;studio#downloads勾选Android Virtual Device，选择适合位置安装。 2.安装完成后在启动界面选择Configure-&gt;SDK Manage-&gt;选择Android SDK Location位置（预留25GB）。在SDK Platforms中选择相应SDK版本。 3.安装过程中">
+<meta property="og:description" content="1.’javac’ 不是内部或外部命令,也不是可运行的程序 或批处理文件。问题排查：找到java安装下的bin目录，运行cmd,输入javac，能提示，说明环境配置有问题">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-02-17T04:59:41.000Z">
-<meta property="article:modified_time" content="2020-02-18T02:28:25.473Z">
+<meta property="article:published_time" content="2020-11-12T13:21:52.000Z">
+<meta property="article:modified_time" content="2020-11-12T13:43:34.723Z">
 <meta property="article:author" content="ZQ">
-<meta property="article:tag" content="Android Studio">
+<meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="ZQ的博客" type="application/atom+xml">
@@ -153,31 +153,35 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Android-Studio安装和配置" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Java命令行运行遇到的一些问题" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Android Studio安装和配置
+      Java命令行运行遇到的一些问题
     </h1>
   
 
         
-        <a href="/2020/02/17/Android-Studio%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/" class="archive-article-date">
-  	<time datetime="2020-02-17T04:59:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-17</time>
+        <a href="/2020/11/12/Java%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%90%E8%A1%8C%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/" class="archive-article-date">
+  	<time datetime="2020-11-12T13:21:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-12</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="1-下载"><a href="#1-下载" class="headerlink" title="1.下载"></a>1.下载</h3><p><a href="https://developer.android.google.cn/studio#downloads" target="_blank" rel="noopener">https://developer.android.google.cn/studio#downloads</a><br>勾选Android Virtual Device，选择适合位置安装。</p>
-<h3 id="2-安装完成后"><a href="#2-安装完成后" class="headerlink" title="2.安装完成后"></a>2.安装完成后</h3><p>在启动界面选择Configure-&gt;SDK Manage-&gt;选择Android SDK Location位置（预留25GB）。<br>在SDK Platforms中选择相应SDK版本。</p>
-<h3 id="3-安装过程中遇到的问题"><a href="#3-安装过程中遇到的问题" class="headerlink" title="3.安装过程中遇到的问题"></a>3.安装过程中遇到的问题</h3><ol>
-<li>第一次启动时，提示：Unable to access Android SDK add-on list.<br>原因为：未在电脑中检测到SDK，点击cancel以后安装。</li>
-</ol>
+        <h4 id="1-’javac’-不是内部或外部命令-也不是可运行的程序-或批处理文件。"><a href="#1-’javac’-不是内部或外部命令-也不是可运行的程序-或批处理文件。" class="headerlink" title="1.’javac’ 不是内部或外部命令,也不是可运行的程序 或批处理文件。"></a>1.’javac’ 不是内部或外部命令,也不是可运行的程序 或批处理文件。</h4><h6 id="问题排查："><a href="#问题排查：" class="headerlink" title="问题排查："></a>问题排查：</h6><p>找到java安装下的bin目录，运行cmd,输入javac，能提示，说明环境配置有问题</p>
+<a id="more"></a>
+<h6 id="环境变量配置："><a href="#环境变量配置：" class="headerlink" title="环境变量配置："></a>环境变量配置：</h6><ul>
+<li>新建-&gt;变量名”JAVA_HOME”，变量值<code>C:\Program Files\Java\jdk1.8.0_202</code>（即JDK的安装路径） </li>
+<li>编辑-&gt;变量名”Path”，在原变量值的最后面加上<code>;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin</code> ,win10去掉分号，隔行即可</li>
+<li>新建-&gt;变量名“CLASSPATH”,变量值<code>.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar</code><h6 id="仍不生效时："><a href="#仍不生效时：" class="headerlink" title="仍不生效时："></a>仍不生效时：</h6>修改Path变量中添加的路径为绝对路径，即：<code>C:\Program Files\Java\jdk1.8.0_202\bin</code>，<code>C:\Program Files\Java\jdk1.8.0_202\jre\bin</code><h4 id="2-上述问题成功解决后，执行javac-Example-java，提示错误-编码GBK的不可映射字符"><a href="#2-上述问题成功解决后，执行javac-Example-java，提示错误-编码GBK的不可映射字符" class="headerlink" title="2.上述问题成功解决后，执行javac Example.java，提示错误: 编码GBK的不可映射字符"></a>2.上述问题成功解决后，执行<code>javac Example.java</code>，提示错误: 编码GBK的不可映射字符</h4><h5 id="原因："><a href="#原因：" class="headerlink" title="原因："></a>原因：</h5>文件中含有中文，文件编码格式为“UTF-8”<h5 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h5></li>
+<li>使用<code>javac -encoding UTF-8 Example.java</code></li>
+<li>修改文件encoding编码为 ANSI</li>
+</ul>
 
       
 
@@ -191,7 +195,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Android Studio</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
         		</li>
       		
 		</ul>
@@ -247,7 +251,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/02/17/Android-Studio%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/11/12/Java%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%90%E8%A1%8C%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -261,18 +265,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/02/17/%E7%AC%AC%E4%B8%80%E4%B8%AAAPP/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          第一个APP
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/02/11/%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%88%E4%BA%8C%EF%BC%89/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">软件设计模式（二）</div>
+    <a href="/2020/10/18/Rational-Rose%E5%AE%89%E8%A3%85%E5%8F%8A%E8%BF%90%E8%A1%8C%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Rational Rose安装及运行的一些问题</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -303,8 +298,8 @@
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "http://yoursite.com/2020/02/17/Android-Studio%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AE/", 
-    sourceId: "Android-Studio安装和配置",
+    url: "http://yoursite.com/2020/11/12/Java%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%90%E8%A1%8C%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/", 
+    sourceId: "Java命令行运行遇到的一些问题",
     productKey: "true",
     target: "cloud-tie-wrapper"
   };
